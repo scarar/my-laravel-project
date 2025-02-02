@@ -99,10 +99,12 @@ npm install
 
 # Build frontend assets
 print_status "Building frontend assets..."
+# Check if 'prod' script is available and run it, otherwise run 'build'
 if npm run | grep -q 'prod'; then
+    echo "Running 'npm run prod'..."
     npm run prod
 else
-    echo "No 'prod' script found in package.json. Running 'npm run build' instead."
+    echo "Running 'npm run build' as 'prod' script is not found..."
     npm run build
 fi
 
