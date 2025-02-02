@@ -4,6 +4,15 @@
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+## Production Installation
+
+To install the Laravel project for production, run the following command:
+
+```bash
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/scarar/my-laravel-project/master/install.sh)"
+```
+
+This script prepares the application for production by installing dependencies, compiling assets, and setting appropriate permissions. Ensure your web server is configured to serve the `public` directory of this Laravel application.
 ## Installation
 
 To install the Laravel project, run the following command:
